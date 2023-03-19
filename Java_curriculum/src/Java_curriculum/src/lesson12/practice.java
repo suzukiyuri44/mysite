@@ -22,7 +22,7 @@ public class practice {
 			if(i%2==0) {
 				System.out.println(i+"は偶数です。");
 			}else {
-				System.out.println(i+"は奇数です。");
+				System.out.println(i+"は奇数です.");
 			}
 			i++;
 		}
