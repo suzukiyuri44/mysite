@@ -22,10 +22,10 @@ public class Practice {
 		int jasum=0;
 		int ensum=0; 
 		int masum=0;
-		for(int a = 0;a<3;a++) {
-			jasum+=test[0][a];
-			ensum+=test[1][a];
-			masum+=test[2][a];
+		for(int a = 0;a<4;a++) {
+			jasum+=test[a][0];
+			ensum+=test[a][1];
+			masum+=test[a][2];
 		}
 		int japanese_average = jasum/4;
 		System.out.println("国語の平均点は"+japanese_average+"点です。");
