@@ -10,6 +10,7 @@ public class status {
 	public static void start(String name) {
 		System.out.println("こんにちは"+name+"さん");
 	}
+	
 	public void quantifying() {
 		System.out.println("ステータス");
 		System.out.println("HP:"+this.getHp());

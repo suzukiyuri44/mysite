@@ -15,7 +15,6 @@ public class user extends status{
 		int de= random.nextInt(1000);
 		
 		status st = new status();
-		
 		st.setHp(h);
 		st.setMp(m);
 		st.setAttack(at);
