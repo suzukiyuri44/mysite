@@ -1,17 +1,18 @@
 package lesson25.process;
 
 public class status {
+	//型を定義
 	private int hp;
 	private int mp;
 	private int attack;
 	private int rapidity;
 	private int defense;
 	
-	
+	//名前を表示する処理
 	public static void start(String name) {
 		System.out.println("こんにちは"+name+"さん");
 	}
-	
+	//名前以外の表示する処理
 	public void quantifying() {
 		System.out.println("ステータス");
 		System.out.println("HP:"+this.getHp());
@@ -22,6 +23,7 @@ public class status {
 		System.out.println("さあ冒険に出かけよう！");
 	}
 	
+	//getterとsetterを定義をする。
 	public int getHp() {
 		return this.hp;
 	}

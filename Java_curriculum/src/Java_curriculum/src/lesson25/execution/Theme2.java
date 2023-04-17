@@ -29,12 +29,16 @@ import lesson25.process.user;
 
 public class Theme2{
 	public static void main(String[] args) {
+		//コンストラクタに表示
 		System.out.println("名前を入力してください。");
+		//クラスの呼び出し
 		status st = new status();
 		user us = new user();
+		//名前を入力
 		Scanner scan = new Scanner(System.in);
 		String line =scan.nextLine();
 		status.start(line);
+		//クラスの呼び出し
 		us.quantifying();
 	}
 }
