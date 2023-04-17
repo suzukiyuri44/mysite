@@ -7,6 +7,7 @@ public class status {
 	private int rapidity;
 	private int defense;
 	
+	
 	public static void start(String name) {
 		System.out.println("こんにちは"+name+"さん");
 	}

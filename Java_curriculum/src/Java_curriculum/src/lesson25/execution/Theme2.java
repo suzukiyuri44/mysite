@@ -29,7 +29,7 @@ import lesson25.process.user;
 
 public class Theme2{
 	public static void main(String[] args) {
-		System.out.println("名前を入力してください.");
+		System.out.println("名前を入力してください。");
 		status st = new status();
 		user us = new user();
 		Scanner scan = new Scanner(System.in);

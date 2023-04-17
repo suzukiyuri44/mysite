@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class user extends status{
 	
-	
 	@Override
 	public void quantifying(){
 		Random random = new Random();		
