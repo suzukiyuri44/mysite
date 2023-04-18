@@ -10,7 +10,7 @@ public class status {
 	
 	//名前を表示する処理
 	public static void start(String name) {
-		System.out.println("こんにちは"+name+"さん");
+		System.out.println("こんにちは「"+name+"」さん");
 	}
 	//名前以外の表示する処理
 	public void quantifying() {
