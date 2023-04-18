@@ -28,8 +28,7 @@ import lesson25.process.status;
 import lesson25.process.user;
 
 public class Theme2{
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		//コンストラクタに表示
 		System.out.println("名前を入力してください。");
 		

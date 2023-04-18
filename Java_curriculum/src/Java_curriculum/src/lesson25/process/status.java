@@ -1,7 +1,6 @@
 package lesson25.process;
 
 public class status {
-	
 	//型を定義
 	private int hp;
 	private int mp;

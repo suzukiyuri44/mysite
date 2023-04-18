@@ -5,7 +5,6 @@ import java.util.Random;
 public class user extends status{
 	
 	public void quantifying(){
-		
 		//ランダム処理
 		int[]ran =new int[5];
 		for(int i =0;i<5;i++) {
