@@ -1,6 +1,7 @@
 package lesson25.process;
 
 public class status {
+	
 	//型を定義
 	private int hp;
 	private int mp;
@@ -12,6 +13,7 @@ public class status {
 	public static void start(String name) {
 		System.out.println("こんにちは「"+name+"」さん");
 	}
+	
 	//名前以外の表示する処理
 	public void quantifying() {
 		System.out.println("ステータス");
