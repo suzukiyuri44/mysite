@@ -1,7 +1,7 @@
 package lesson27.process;
 
 public class display extends animal {
-	
+		
 	public static void input(String str) {
 		
 		// Theme2クラスのstrを","を区切りanimalに代入する
@@ -26,15 +26,21 @@ public class display extends animal {
 			// aの文字列を":"を区切りanimalsに代入する。
 			String []animals =a.split(":");
 			
-			// animalsクラスを呼び出す
-			animal ani = new animal();
+			// animalを呼び出し
+			animal an = new animal();
 			
 			// animalsをanimalクラスのinputに代入する
-			ani.setName(animals[0]);
-			ani.setLength(animals[1]);
-			ani.setSpeed(animals[2]);
-			ani.setScientific_name(animals[3]);
-			ani.input();
+			an.setName(animals[0]);
+			an.setLength(Double.parseDouble(animals[1]));
+			an.setSpeed(Integer.parseInt(animals[2]));
+			an.setScientific_name(animals[3]);
+			
+			// コンストラクタの表示処理
+			System.out.println("動物："+an.getName());
+			System.out.println("体長："+an.getLength()+"m");
+			System.out.println("速度："+an.getSpeed()+"km/h");
+			System.out.println("学名："+an.getScientific_name());
+			System.out.println("");
 			
 		}
 	}

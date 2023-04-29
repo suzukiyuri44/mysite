@@ -43,22 +43,19 @@ package lesson27.execution;
 
 import java.util.Scanner;
 
-import lesson27.process.animal;
 import lesson27.process.display;
 
 public class Theme2{
 	public static void main(String[] args) {
+		// インスタンスの生成
 		System.out.println("コンソールに文字を入力してください");
-		
-		// クラスを呼び出し
-		animal an = new animal();
-		display di = new display();
 		
 		// コンソールに入力した値を取得
 		Scanner scanner = new Scanner(System.in);
 		String str =scanner.nextLine();
-		
+
 		// displayクラスの中にあるinputにString strの値を代入
 		display.input(str);
+		
 	}
 }
