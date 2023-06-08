@@ -9,7 +9,7 @@ public class Main {
 		System.out.println(person1.height);
 
 		person1.print();
-		Person.Count();
+		Person.count();
 	}
 
 }

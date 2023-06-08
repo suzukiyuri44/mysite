@@ -30,7 +30,7 @@ public class Person {
 	}
 
 	// 人数の合計
-	public static void Count() {
+	public static void count() {
 		System.out.println("合計" + Person.count + "人です。");
 	}
 
