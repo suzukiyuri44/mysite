@@ -2,15 +2,17 @@ package lesson31;
 
 public class Person {
 	// インスタンスフィールドを定義
-	public String name;
+	public String firstName;
+	public String lastName;
 	public int age;
 	public double height;
 	public double weight;
 	public static int count = 0;
 
 	// コンストラクタを定義しインスタンスフィールドに値をセット
-	Person(String name, int age, double height, double weight) {
-		this.name = name;
+	Person(String firstName, String lastName, int age, double height, double weight) {
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
@@ -22,20 +24,25 @@ public class Person {
 		return this.weight / (this.height * this.height);
 	}
 
+	// インスタンスメソッド「fullName」を定義
+	public String fullName() {
+		return this.firstName + this.lastName;
+	}
+
 	// インスタンスメソッド「buy」を定義
 	public void buy(Car car) {
-		car.setOwner(this.name);
+		car.setOwner(this.fullName());
 		System.out.print(car.getOwner() + "が購入しました。");
 	}
 
 	public void buy(Bicycle bicycle) {
-		bicycle.setOwner(this.name);
+		bicycle.setOwner(this.fullName());
 		System.out.print(bicycle.getOwner() + "が購入しました。");
 	}
 
 	// インスタンスメソッド「print」を定義
 	public void print() {
-		System.out.println("名前は" + this.name + "です");
+		System.out.println("名前は" + this.fullName() + "です");
 		System.out.println("年は" + this.age + "です。");
 		System.out.println("BMIは" + String.format("%.1f", this.bmi()) + "です。");
 	}
